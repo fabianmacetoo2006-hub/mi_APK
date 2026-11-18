@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="greda" cx="50%" cy="50%" r="70%">
+      <stop offset="0" stop-color="#a8724b"/>
+      <stop offset="1" stop-color="#5e3820"/>
+    </radialGradient>
+    <radialGradient id="tejo" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#f2f3f6"/>
+      <stop offset=".5" stop-color="#9a9ea8"/>
+      <stop offset="1" stop-color="#3e4148"/>
+    </radialGradient>
+    <radialGradient id="boom" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset=".45" stop-color="#ffc21a"/>
+      <stop offset="1" stop-color="#ff4a12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="#5b3518"/>
+  <rect x="70" y="70" width="884" height="884" rx="40" fill="url(#greda)"/>
+  <!-- bocín -->
+  <circle cx="512" cy="600" r="190" fill="#3a2214"/>
+  <circle cx="512" cy="600" r="190" fill="none" stroke="#2b2b2e" stroke-width="40"/>
+  <path d="M352 520 A190 190 0 0 1 560 412" fill="none" stroke="#a3a6ad" stroke-width="12" stroke-linecap="round"/>
+  <!-- explosión de mecha -->
+  <g transform="translate(700 560)">
+    <circle r="210" fill="url(#boom)"/>
+    <path d="M0 -190 L38 -60 L170 -110 L80 0 L190 70 L50 60 L40 190 L-20 70 L-150 140 L-80 10 L-190 -40 L-50 -50 Z" fill="#ffd23f"/>
+    <path d="M0 -110 L22 -35 L95 -60 L45 0 L105 40 L28 35 L22 105 L-12 40 L-85 80 L-45 6 L-105 -22 L-28 -28 Z" fill="#fff4c4"/>
+  </g>
+  <!-- tejo -->
+  <ellipse cx="420" cy="660" rx="150" ry="70" fill="rgba(0,0,0,.35)"/>
+  <circle cx="400" cy="590" r="150" fill="url(#tejo)" stroke="#2b2d32" stroke-width="16"/>
+</svg>

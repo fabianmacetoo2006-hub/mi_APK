@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tejo Mecha</string>
+    <string name="title_activity_main">Tejo Mecha</string>
+    <string name="package_name">co.edu.uniagustiniana.tejomecha</string>
+    <string name="custom_url_scheme">co.edu.uniagustiniana.tejomecha</string>
+</resources>

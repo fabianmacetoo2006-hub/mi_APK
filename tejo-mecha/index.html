@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a1a10" />
+    <title>Tejo Mecha</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="juego"></canvas>
+
+      <div id="hud" class="oculto">
+        <div class="caja"><small>Puntos</small><b id="puntos">0</b></div>
+        <div class="caja"><small>Tejo</small><b id="lanzamiento">1/10</b></div>
+        <div class="caja"><small>Viento</small><b id="viento">0</b></div>
+        <button id="btnPausa" aria-label="Pausa">❚❚</button>
+      </div>
+      <div id="instruccion" class="oculto">Toca para fijar la puntería</div>
+
+      <section id="inicio" class="pantalla">
+        <img src="/icon.png" alt="" class="logo" />
+        <h1>Tejo<br /><span>Mecha</span></h1>
+        <p class="sub">El deporte nacional, en tu celular</p>
+        <ul class="ayuda">
+          <li><b>1er toque:</b> fija la puntería</li>
+          <li><b>2do toque:</b> fija la fuerza</li>
+          <li>Ojo con el viento 🌬️</li>
+        </ul>
+        <table class="tabla">
+          <tr><td>💥 Mecha</td><td>3</td></tr>
+          <tr><td>🎯 Embocinada</td><td>6</td></tr>
+          <tr><td>🔥 Moñona (las dos)</td><td>9</td></tr>
+          <tr><td>👌 Cerquita</td><td>1</td></tr>
+        </table>
+        <button id="btnJugar" class="btn">Jugar 10 tejos</button>
+        <p class="record">Récord: <b id="recordInicio">0</b></p>
+        <p class="creditos">Desarrollado por Yeison Fabian Maceto Huertas<br />Tecnología en Desarrollo de Software · Uniagustiniana</p>
+      </section>
+
+      <section id="fin" class="pantalla oculto">
+        <h2>¡Se acabó el chico!</h2>
+        <p class="grande"><b id="puntosFin">0</b> puntos</p>
+        <p id="resumenFin"></p>
+        <p id="tituloFin" class="titulo"></p>
+        <p class="record">Récord: <b id="recordFin">0</b> <span id="nuevoRecord" class="oculto">¡Nuevo récord!</span></p>
+        <button id="btnOtraVez" class="btn">Otro chico</button>
+        <button id="btnMenu" class="btn secundario">Menú</button>
+      </section>
+
+      <section id="pausa" class="pantalla oculto">
+        <h2>Pausa</h2>
+        <button id="btnSeguir" class="btn">Seguir</button>
+        <button id="btnSalir" class="btn secundario">Salir</button>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
